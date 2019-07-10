@@ -1,0 +1,8 @@
+CREATE TABLE `animaux` (
+	`nom` VARCHAR(50) NOT NULL,
+	`type` VARCHAR(50) NOT NULL,
+	`scale` VARCHAR(50) NULL DEFAULT NULL,
+	`fur` VARCHAR(50) NULL DEFAULT NULL,
+	`feathers` VARCHAR(50) NULL DEFAULT NULL,
+	PRIMARY KEY (`nom`, `type`)
+)
