@@ -106,7 +106,7 @@
             <div>
                 <label>Nom : *</label>
                 
-                <input type="text" name="nom" value="{{$animal->nom}}">
+                <input type="text" name="nom" value="{{$animal->nom}}" required>
                 
             </div>
             
@@ -157,7 +157,7 @@
                     if($animal->type == 'Oiseau'){
                         echo $animal->feather ;        
                     }
-                                                     ?>">
+                                                     ?>" required>
             </div>
             
             <br />

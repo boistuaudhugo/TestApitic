@@ -104,7 +104,7 @@
             <div>
                 <label>Nom : *</label>
                 
-                <input type="text" name="nom">
+                <input type="text" name="nom" required>
                 
             </div>
             
@@ -112,8 +112,8 @@
             
             <div>
                 
-                <select name="type">
-                    <option active>Choix</option>
+                <select name="type" value="choix" required>
+                    <option>Séléctionnez un type</option>
                     <option>Reptile</option>
                     <option>Mammifere</option>
                     <option>Oiseau</option>
@@ -125,7 +125,7 @@
             
             <div>
                 <label>Caractéristique : *</label>
-                <input type="text" name="carac">
+                <input type="text" name="carac" required>
             </div>
             
             <br />
