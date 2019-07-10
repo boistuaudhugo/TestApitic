@@ -15,14 +15,13 @@ class CreateAnimauxesTable extends Migration
     {
         Schema::create('animauxes', function (Blueprint $animaux) {
             $animaux->bigIncrements('id');
-            $animaux->String('nom');
+            $animaux->String('nom')->unique();
             $animaux->String('type');
             $animaux->String('scale')->nullable();
             $animaux->String('fur')->nullable();
             $animaux->String('feather')->nullable();
             $animaux->timestamp('updated_at')->nullable();
             $animaux->timestamp('created_at')->nullable();
-            
         });
     }
 
